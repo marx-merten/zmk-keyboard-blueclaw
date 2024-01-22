@@ -1,0 +1,13 @@
+file_format: "1"
+id: blueclaw
+name: Blueclaw
+type: shield
+url: https://github.com/kata0510/Lily58
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - display
+siblings:
+  - blueclaw_left
+  - blueclaw_right

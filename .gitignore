@@ -1,0 +1,4 @@
+config/private_secrets.dtsi
+build
+firmware
+config/boards/shields/lily58
