@@ -130,10 +130,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&gresc     &kp N1        &kp N2           &kp N3           &kp N4                &kp N5                                        &kp N6       &kp N7              &kp N8            &kp N9           &kp N0                &kp MINUS
-&kp TAB    &kp Q         &kp W            &kp F            &kp P                 &kp B                                         &kp J        &kp L               &kp U             &kp Y            &kp SEMICOLON         &kp BACKSLASH
-&kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                                         &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O  &kp SQT
-&kp LSHFT  &lt 4 Z       &kp X            &kp C            &kp D                 &kp V                                         &kp K        &kp H               &kp COMMA         &kp DOT          &kp FSLH              &kp RSHFT
+&gresc     &kp N1        &kp N2           &kp N3           &kp N4                &kp N5                                        &kp N6       &kp N7              &kp N8            &kp N9           &kp N0                        &kp MINUS
+&kp TAB    &kp Q         &kp W            &kp F            &kp P                 &kp B                                         &kp J        &kp L               &kp U             &kp Y            &kp SEMICOLON                 &kp BACKSLASH
+&kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                                         &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
+&kp LSHFT  &lt 4 Z       &kp X            &kp C            &kp D                 &kp V                                         &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
                          &none            &kp LEFT_ALT                                                                                                          &lbr              &rbr
                                                            &mt LEFT_COMMAND TAB  &lt 2 ENTER  &none    &key_repeat             &lt 1 SPACE  &lt 3 BACKSPACE
                                                                                  &none        &mo 4    &kp LA(LC(LEFT_SHIFT))  &none
