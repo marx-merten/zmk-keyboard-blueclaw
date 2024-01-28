@@ -2,3 +2,5 @@ config/private_secrets.dtsi
 build
 firmware
 config/boards/shields/lily58
+3d_design/temp
+.DS_Store
