@@ -158,7 +158,7 @@
             bindings = <
 &trans  &trans             &trans                &trans                &trans                        &trans                             &trans     &trans           &trans  &trans     &trans             &trans
 &trans  &trans             &trans                &trans                &trans                        &kp K_MUTE                         &kp PG_UP  &kp HOME         &kp UP  &kp END    &trans             &trans
-&trans  &hml LCTRL C_PREV  &hml LEFT_ALT C_NEXT  &hml LEFT_GUI C_STOP  &hml LEFT_SHIFT C_PLAY_PAUSE  &kp C_VOLUME_UP                    &kp PG_DN  &kp LEFT         &kp UP  &kp RIGHT  &kp K_APPLICATION  &kp ENTER
+&trans  &hml LCTRL C_PREV  &hml LEFT_ALT C_NEXT  &hml LEFT_GUI C_STOP  &hml LEFT_SHIFT C_PLAY_PAUSE  &kp C_VOLUME_UP                    &kp PG_DN  &kp LEFT         &kp DOWN  &kp RIGHT  &kp K_APPLICATION  &kp ENTER
 &trans  &trans             &trans                &kp K_COPY            &kp K_PASTE                   &kp C_VOL_DN                       &trans     &trans           &trans  &trans     &trans             &trans
                            &trans                &trans                                                                                                             &trans  &trans
                                                                        &trans                        &trans           &trans    &trans  &trans     &lt 6 BACKSPACE
