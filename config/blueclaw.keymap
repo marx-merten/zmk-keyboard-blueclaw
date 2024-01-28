@@ -176,7 +176,7 @@
 &trans        &m_zoom         &trans          &trans          &trans          &to 0                             &trans          &trans          &trans          &trans          &trans          &trans
                               &trans          &trans                                                                                            &trans          &trans
                                                               &trans          &trans          &trans    &trans  &trans          &trans
-                                                                              &trans          &trans    &trans  &trans label
+                                                                              &trans          &trans    &trans  &trans
             >;
 
             label = "sys";
