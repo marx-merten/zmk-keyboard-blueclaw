@@ -160,7 +160,7 @@
 &kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                              &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
 &kp LSHFT  &lt 5 Z       &kp X            &kp C            &kp D                 &kp V                              &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
                          &kp LCTRL        &kp LEFT_ALT                                                                                               &lbr              &rbr
-                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &lt 4 BACKSPACE
+                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &kp BACKSPACE
                                                                                  &mo 5        &mo 6    &mo 6        &mo 4
             >;
         };
@@ -208,12 +208,12 @@
         sys {
             bindings = <
 &bootloader   &kp LG(LC(KP_N1))  &kp LG(LC(KP_N2))  &kp LG(LC(KP_N3))  &kp LG(LC(KP_N4))  &kp LG(LC(KP_N5))                    &kp LG(LC(KP_N6))  &kp LG(LC(KP_N7))  &kp LG(LC(KP_N8))  &kp LG(LC(KP_N9))  &kp LG(LC(KP_N0))  &bootloader
-&trans        &m_pass1        &m_pass2        &trans          &trans          &trans                            &trans          &kp K_LOCK      &trans          &trans          &trans          &trans
-&kp CAPSLOCK  &caps_word      &trans          &trans          &trans          &to 7                             &trans          &trans          &trans          &trans          &trans          &trans
-&trans        &m_zoom         &trans          &trans          &trans          &to 0                             &trans          &trans          &trans          &trans          &trans          &trans
-                              &trans          &trans                                                                                            &trans          &trans
-                                                              &trans          &trans          &trans    &trans  &trans          &trans
-                                                                              &trans          &trans    &tog 4  &trans
+&trans        &m_pass1           &m_pass2           &trans             &trans             &trans                               &trans             &kp K_LOCK         &trans             &trans             &trans             &trans
+&kp CAPSLOCK  &caps_word         &trans             &trans             &trans             &to 7                                &trans             &trans             &trans             &trans             &trans             &trans
+&trans        &m_zoom            &trans             &trans             &trans             &to 0                                &trans             &trans             &trans             &trans             &trans             &trans
+                                 &trans             &trans                                                                                                           &trans             &trans
+                                                                       &trans             &trans             &trans    &trans  &trans             &trans
+                                                                                          &trans             &trans    &tog 4  &trans
             >;
 
             label = "sys";
