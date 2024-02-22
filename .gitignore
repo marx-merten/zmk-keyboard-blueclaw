@@ -5,3 +5,4 @@ config/boards/shields/lily58
 3d_design/temp
 .DS_Store
 3d_design/.DS_Store
+node_modules/

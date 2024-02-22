@@ -1,0 +1,143 @@
+units:
+  # Proxy Spacing Variables
+  kx: u
+  ky: u
+  px: 14
+  py: 14
+  #board outer padding
+  bx: U+5
+  by: U+5
+  $default_height: cy
+  $default_width: cx
+  dspSpace: 1.2ky
+  tapwidth: 3
+  tapdistance: 10
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1ky
+        spread: 1.2kx
+      columns:
+        left:
+        middle:
+        right:
+      rows:
+        bottom:
+        home:
+        top:
+          shift: [0, dspSpace]
+    mount_2:
+      anchor:
+        aggregate.parts:
+          - ref: matrix_left_bottom
+          - ref: matrix_left_home
+          - ref: matrix_middle_bottom
+          - ref: matrix_middle_home
+      key:
+        height: 2
+        width: 2
+        spread: 1.2kx
+      columns:
+        left:
+        right:
+
+    mount_1:
+      anchor:
+        aggregate.parts:
+          - ref: matrix_left_top
+          - ref: matrix_middle_top
+        shift: [0, -.5ky]
+      key:
+        height: 2
+        width: 2
+        spread: 1.2kx
+      columns:
+        left:
+        right:
+
+outlines:
+  keys:
+    - what: rectangle
+      where: "/^matrix_/"
+      size: [cx, cy]
+  keysPlate:
+    keyplates:
+      what: rectangle
+      where: "/^matrix_/"
+      size: [px, py]
+    encoder:
+      what: rectangle
+      where: "/^matrix_middle_top/"
+      size: [px, py]
+
+  surround:
+    - what: polygon
+      fillet: 2
+      points:
+        - ref: matrix_left_top
+          shift: [-.5bx, .5by]
+        - ref: matrix_right_top
+          shift: [.5bx, .5by]
+        - ref: matrix_right_bottom
+          shift: [.5bx, -.5by]
+        - ref: matrix_left_bottom
+          shift: [-.5bx, -.5by]
+  board:
+    surroundLeft:
+      what: polygon
+      fillet: 2
+      points:
+        - ref: matrix_left_top
+          shift: [-.5bx, .5by]
+        - ref: matrix_right_top
+          shift: [.5bx, .5by]
+        - ref: matrix_right_bottom
+          shift: [.5bx, -.5by]
+        - ref: matrix_left_bottom
+          shift: [-.5bx, -.5by]
+    sright:
+      what: outline
+      name: "surround"
+      adjust:
+        ref: matrix_right_bottom
+        shift: [kx+tapdistance, 0]
+    keys1:
+      what: outline
+      name: "keys"
+      operation: stack
+    keyholes:
+      what: outline
+      name: "keysPlate"
+      operation: stack
+      adjust:
+        ref: matrix_right_bottom
+        shift: [kx+tapdistance, 0]
+
+    mike2:
+      what: rectangle
+      adjust:
+        ref: matrix_right_top
+        shift: [.5kx+.5tapdistance, 0]
+      size: [tapdistance, tapwidth]
+    tap2:
+      what: rectangle
+      adjust:
+        ref.aggregate.parts: [matrix_right_top, matrix_right_bottom]
+        shift: [.5kx+.5tapdistance, 0]
+      size: [tapdistance, tapwidth]
+    tap3:
+      what: rectangle
+      adjust:
+        ref: matrix_right_bottom
+        shift: [.5kx+.5tapdistance, 0]
+      size: [tapdistance, tapwidth]
+
+  debug:
+    - "keys"
+    - "^board"
+pcbs:
+  main:
+    outlines:
+      main:
+        outline: board
