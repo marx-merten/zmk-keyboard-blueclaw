@@ -274,5 +274,4 @@
 };
 
 // THIS WILL Be a defined makro when compiled with secrets, or empty when no secrets are in play
-
 INJECT_SECRETS()
