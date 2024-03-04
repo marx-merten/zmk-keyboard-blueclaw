@@ -6,3 +6,6 @@ config/boards/shields/lily58
 .DS_Store
 3d_design/.DS_Store
 node_modules/
+pcb/dongle/production
+~*.lck
+pcb/dongle/#auto_saved_files#

@@ -87,6 +87,17 @@ outlines:
           shift: [.5bx, -.5by]
         - ref: matrix_left_bottom
           shift: [-.5bx, -.5by]
+  prints:
+    oledWindowPrint:
+      what: rectangle
+      size: [40, 13]
+      operation: stack
+      adjust:
+        aggregate:
+          parts:
+            - ref: mount_right_top
+            - ref: mount_left_top
+        shift: [0, -.5dspSpace-ky]
   board:
     surroundLeft:
       what: polygon
@@ -153,14 +164,36 @@ outlines:
   debug:
     - "keys"
     - "^board"
+    - "^prints"
 pcbs:
   main:
     outlines:
       main:
         outline: board
+      prints:
+        outline: prints
+        layer: "F.SilkS"
     footprints:
-      - where: "/^matrix_/"
-        what: placeholder
-        params:
-          designator: "S"
-          net: "GND2"
+        keys:
+          where: "/^matrix_/"
+          what: placeholder
+          params:
+            designator: "S"
+            label: "KEY"
+        oled:
+          adjust:
+            aggregate:
+              parts:
+                - ref: mount_right_top
+                - ref: mount_left_top
+            shift: [0, -.5dspSpace-ky]
+          what: placeholder
+          params:
+            designator: "DSP"
+            label: "OLED"
+        mounting:
+          where: "/mount_/"
+          what: placeholder
+          params:
+            designator: "M"
+            label: "MOUNT"
