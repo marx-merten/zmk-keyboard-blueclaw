@@ -162,6 +162,10 @@
                          &kp LCTRL        &kp LEFT_ALT                                                                                               &lbr              &rbr
                                                            &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &kp BACKSPACE
                                                                                  &mo 5        &mo 6    &mo 6        &mo 4
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
         };
 
@@ -174,6 +178,10 @@
                                 &trans               &trans                                                                                                            &trans                          &trans
                                                                          &trans                 &trans         &trans    &trans  &trans         &trans
                                                                                                 &trans         &trans    &tog 1  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
 
             label = "sym/num";
@@ -188,6 +196,10 @@
                 &trans  &trans                                                    &kp N0  &kp COMMA
                                 &trans  &trans  &trans    &trans  &trans  &trans
                                         &trans  &tog 2    &trans  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
         };
 
@@ -200,6 +212,10 @@
                 &trans              &trans                                                                                                     &trans            &trans
                                                         &trans                 &trans           &trans    &trans  &trans      &lt 8 BACKSPACE
                                                                                &trans           &tog 3    &trans  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
 
             label = "Nav";
@@ -214,6 +230,10 @@
                                  &trans             &trans                                                                                                           &trans             &trans
                                                                        &trans             &trans             &trans    &trans  &trans             &trans
                                                                                           &trans             &trans    &tog 4  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
 
             label = "sys";
@@ -228,6 +248,10 @@
                 &trans  &trans                                                      &trans   &trans
                                 &trans  &trans  &trans    &trans  &trans   &trans
                                         &trans  &tog 5    &trans  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
         };
 
@@ -240,6 +264,10 @@
                 &trans  &trans                                                    &trans  &trans
                                 &trans  &to 3   &to 2     &trans  &to 1   &trans
                                         &to 5   &trans    &trans  &to 4
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
         };
 
@@ -252,6 +280,10 @@
                    &kp LALT  &kp LGUI                                                                    &kp RGUI   &kp LALT
                                        &trans  &kp ENTER  &kp SPACE      &kp ENTER    &kp SPACE  &trans
                                                &trans     &key_repeat    &key_repeat  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
 
             label = "game";
@@ -266,6 +298,10 @@
                        &trans         &trans                                                                         &trans        &trans
                                                      &trans         &trans         &trans    &trans  &trans  &trans
                                                                     &trans         &trans    &trans  &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
+
             >;
 
             label = "cfg";
