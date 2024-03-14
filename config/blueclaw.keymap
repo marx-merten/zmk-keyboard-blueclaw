@@ -113,7 +113,7 @@
 
         CO_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
             require-prior-idle-ms = <200>;
             timeout-ms = <50>;
         };
