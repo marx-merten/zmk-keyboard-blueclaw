@@ -166,7 +166,7 @@
 &kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                              &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
 &kp LSHFT  &lt 5 Z       &kp X            &kp C            &kp D                 &kp V                              &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
                          &kp LCTRL        &kp LEFT_ALT                                                                                               &lbr              &rbr
-                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &kp BACKSPACE
+                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &mt RIGHT_CONTROL BACKSPACE
                                                                                  &mo 5        &mo 6    &mo 6        &mo 4
            &kp A         &trans           &trans
            &trans        &trans           &trans
