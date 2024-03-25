@@ -9,3 +9,6 @@ node_modules/
 pcb/dongle/production
 ~*.lck
 pcb/dongle/#auto_saved_files#
+doc/keymap_combos.svg
+doc/keymap.svg
+doc/keymap.yaml
