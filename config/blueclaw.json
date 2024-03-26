@@ -89,5 +89,15 @@
       ]
     }
   },
-  "sensors": []
+
+
+
+  "sensors": [        {
+    "ref": "main_encoder",
+    "name": "encoder_main",
+    "identifier": "encoder_main",
+    "compatible": "alps,ec11",
+    "label": "MAIN_ENCODER"
+}
+]
 }
