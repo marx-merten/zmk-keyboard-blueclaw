@@ -1,20 +1,42 @@
 
 if SHIELD_BLUECLAW_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "blueclaw"
+    config ZMK_KEYBOARD_NAME
+        default "blueclaw"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
 
 endif
 
-if SHIELD_BLUECLAW_LEFT || SHIELD_BLUECLAW_RIGHT
-
-config ZMK_SPLIT
-    default y
 
 
 
+
+
+if SHIELD_BLUECLAW_LEFT || SHIELD_BLUECLAW_RIGHT || SHIELD_BLUECLAW_MASTER || SHIELD_BLUECLAW_SLAVELEFT
+
+    config ZMK_SPLIT
+        default y
+
+endif
+
+
+if SHIELD_BLUECLAW_SLAVELEFT || SHIELD_BLUECLAW_LEFT
+endif
+
+
+if SHIELD_BLUECLAW_MASTER
+    config ZMK_KEYBOARD_NAME
+        default "greyclaw_master"
+
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 2
+
+    config ZMK_EXT_POWER
+        default n
 
 endif

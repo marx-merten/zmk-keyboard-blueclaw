@@ -115,7 +115,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <50>;
+
         };
     };
 
@@ -160,11 +160,16 @@
 &gresc     &kp N1        &kp N2           &kp N3           &kp N4                &kp N5                             &kp N6       &kp N7              &kp N8            &kp N9           &kp N0                        &kp MINUS
 &kp TAB    &kp Q         &kp W            &kp F            &kp P                 &kp B                              &kp J        &kp L               &kp U             &kp Y            &kp SEMICOLON                 &kp BACKSLASH
 &kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                              &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
-&kp LSHFT  &lt 5 Z       &kp X            &kp C            &kp D                 &kp V                              &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
+&kp LSHFT  &kp Z         &kp X            &kp C            &kp D                 &kp V                              &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
                          &kp LCTRL        &kp LEFT_ALT                                                                                               &lbr              &rbr
                                                            &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &key_repeat  &lt 1 SPACE  &kp BACKSPACE
                                                                                  &mo 5        &mo 6    &mo 6        &mo 4
+           &kp A         &trans           &trans
+           &trans        &trans           &trans
+           &trans        &trans           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp N1 N2>;
         };
 
         Symbols {
@@ -176,9 +181,12 @@
                                 &trans               &trans                                                                                                            &trans                          &trans
                                                                          &trans                 &trans         &trans    &trans  &trans         &trans
                                                                                                 &trans         &trans    &tog 1  &trans
+        &trans                  &trans               &trans
+        &trans                  &trans               &trans
+        &trans                  &trans               &trans
             >;
 
-            label = "sym/num";
+            label = "symbols";
         };
 
         Num {
@@ -190,7 +198,12 @@
                 &trans  &trans                                                    &kp N0  &kp COMMA
                                 &trans  &trans  &trans    &trans  &trans  &trans
                                         &trans  &tog 2    &trans  &trans
+        &trans  &trans  &trans
+        &trans  &trans  &trans
+        &trans  &trans  &trans
             >;
+
+            label = "numbers";
         };
 
         Nav {
@@ -202,6 +215,9 @@
                 &trans              &trans                                                                                                     &trans            &trans
                                                         &trans                 &trans           &trans    &trans  &trans      &lt 8 BACKSPACE
                                                                                &trans           &tog 3    &trans  &trans
+        &trans  &trans              &trans
+        &trans  &trans              &trans
+        &trans  &trans              &trans
             >;
 
             label = "Nav";
@@ -216,6 +232,9 @@
                                  &trans             &trans                                                                                                           &trans             &trans
                                                                        &trans             &trans             &trans    &trans  &trans             &trans
                                                                                           &trans             &trans    &tog 4  &trans
+              &bootloader        &trans             &trans
+              &trans             &trans             &trans
+              &trans             &trans             &trans
             >;
 
             label = "sys";
@@ -230,7 +249,12 @@
                 &trans  &trans                                                      &trans   &trans
                                 &trans  &trans  &trans    &trans  &trans   &trans
                                         &trans  &tog 5    &trans  &trans
+        &trans  &trans  &trans
+        &trans  &trans  &trans
+        &trans  &trans  &trans
             >;
+
+            label = "f-keys";
         };
 
         locking {
@@ -242,7 +266,12 @@
                 &trans  &trans                                                    &trans  &trans
                                 &trans  &to 3   &to 2     &trans  &to 1   &trans
                                         &to 5   &trans    &trans  &to 4
+        &trans  &trans  &trans
+        &trans  &trans  &trans
+        &trans  &trans  &trans
             >;
+
+            label = "layers";
         };
 
         game {
@@ -254,6 +283,9 @@
                    &kp LALT  &kp LGUI                                                                    &kp RGUI   &kp LALT
                                        &trans  &kp ENTER  &kp SPACE      &kp ENTER    &kp SPACE  &trans
                                                &trans     &key_repeat    &key_repeat  &trans
+           &trans  &trans    &trans
+           &trans  &trans    &trans
+           &trans  &trans    &trans
             >;
 
             label = "game";
@@ -268,9 +300,12 @@
                        &trans         &trans                                                                         &trans        &trans
                                                      &trans         &trans         &trans    &trans  &trans  &trans
                                                                     &trans         &trans    &trans  &trans
+        &trans         &trans         &trans
+        &trans         &trans         &trans
+        &trans         &trans         &trans
             >;
 
-            label = "cfg";
+            label = "BIOS";
         };
     };
 };

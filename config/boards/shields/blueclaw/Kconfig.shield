@@ -6,3 +6,9 @@ config SHIELD_BLUECLAW_LEFT
 
 config SHIELD_BLUECLAW_RIGHT
     def_bool $(shields_list_contains,blueclaw_right)
+
+config SHIELD_BLUECLAW_MASTER
+    def_bool $(shields_list_contains,blueclaw_master)
+
+config SHIELD_BLUECLAW_SLAVELEFT
+    def_bool $(shields_list_contains,blueclaw_slaveleft)
