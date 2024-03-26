@@ -115,6 +115,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <200>;
+
         };
     };
 
