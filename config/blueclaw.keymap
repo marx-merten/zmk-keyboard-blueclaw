@@ -275,16 +275,16 @@
 
         game {
             bindings = <
-&kp ESC  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp F1   &kp T   &kp Q     &kp W     &kp E      &kp R                                  &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp F2   &kp G   &kp A     &kp S     &kp D      &kp F                                  &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp F3   &kp B   &kp Z     &kp X     &kp C      &kp V                                  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                 &kp LBKT  &kp RBKT                                                                       &kp RGUI   &kp LALT
-                                     &kp LSHFT  &kp ENTER  &kp SPACE      &kp ENTER    &kp SPACE  &trans
-                                                &kp LCTRL  &key_repeat    &key_repeat  &trans
-         &trans  &trans    &trans
-         &trans  &trans    &trans
-         &trans  &trans    &trans
+&kp ESC  &kp N1          &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp T    &kp TAB         &kp Q     &kp W     &kp E      &kp R                                  &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp G    &kp LEFT_SHIFT  &kp A     &kp S     &kp D      &kp F                                  &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp V    &kp LCTRL       &kp Z     &kp X     &kp C      &kp V                                  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                         &kp LBKT  &kp RBKT                                                                       &kp RGUI   &kp LALT
+                                             &kp LSHFT  &kp SPACE  &kp ENTER      &kp ENTER    &kp SPACE  &trans
+                                                        &kp LCTRL  &key_repeat    &key_repeat  &trans
+         &trans          &trans    &trans
+         &trans          &trans    &trans
+         &trans          &trans    &trans
             >;
 
             label = "game";
