@@ -1,4 +1,9 @@
-doc: doc/keymap.svg doc/keymap_combos.svg
+
+LAYERS := default Symbols Num     Nav     sys     func    locking game    cfg
+
+
+
+doc: doc/keymap.svg doc/keymap_combos.svg $(LAYERS:%=doc/km_layer_%.svg)
 
 doc/keymap.svg: doc/keymap.yaml keymapper.conf config/blueclaw.json
 	keymap -c keymapper.conf draw -j config/blueclaw.json --keys-only doc/keymap.yaml >doc/keymap.svg
@@ -15,6 +20,14 @@ firmware: FORCE
 	zmkbuild build-docker  --module  .
 
 clean: FORCE
-	rm -rf build firmware doc/keymap.yaml doc/keymap.svg doc/keymap_combos.svg
+	rm -rf build firmware doc/*
 
 FORCE:
+PerLayer: $(LAYERS:%=doc/km_layer_%.svg)
+
+
+$(LAYERS:%=doc/km_layer_%.svg): doc/keymap.yaml keymapper.conf config/blueclaw.json
+#	name := $()
+	@echo "target: $(@:doc/km_layer_%.png=%)"
+# keymap -c keymapper.conf draw -j config/blueclaw.json --keys-only --select-layers $(@:doc/km_layer_%.png=%) doc/keymap.yaml >$@
+	keymap -c keymapper.conf draw  --select-layers  $(@:doc/km_layer_%.svg=%)   -j config/blueclaw.json --keys-only  doc/keymap.yaml  >$@
