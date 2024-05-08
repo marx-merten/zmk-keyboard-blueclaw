@@ -148,6 +148,48 @@
             bindings = <&kp DOT &kp DOT &kp FSLH>;
             label = "PDIR";
         };
+
+        cond_lte: cond_lte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "COND_LTE";
+        };
+
+        cond_gte: cond_gte {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "COND_GTE";
+        };
+
+        cond_egt: cond_egt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "COND_EGT";
+        };
+
+        cond_mgt: cond_mgt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "COND_MGT";
+        };
+
+        math_inc: math_inc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS &kp PLUS>;
+            label = "MATH_INC";
+        };
+
+        math_dec: math_dec {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp MINUS>;
+            label = "MATH_DEC";
+        };
     };
 
     keymap {
@@ -190,16 +232,16 @@
 
         Num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans     &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9     &kp LS(STAR)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6     &kp LS(PLUS)  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N1  &kp N2  &kp N3     &kp BSLH      &kp EQUAL
-                &trans  &trans                                                    &kp N0  &kp COMMA
-                                &trans  &trans  &trans    &trans  &trans  &trans
-                                        &trans  &tog 2    &trans  &trans
-        &trans  &trans  &trans
-        &trans  &trans  &trans
-        &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                    &trans           &trans           &trans     &trans      &trans        &trans
+&trans  &trans  &cond_lte  &cond_gte  &cond_mgt  &trans                    &trans           &kp KP_N7        &kp KP_N8  &kp KP_N9   &kp LS(STAR)  &trans
+&trans  &trans  &math_dec  &math_inc  &cond_egt  &trans                    &kp TAB          &kp KP_N4        &kp KP_N5  &kp KP_N6   &kp LS(PLUS)  &kp MINUS
+&trans  &trans  &trans     &trans     &trans     &trans                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3   &kp BSLH      &kp EQUAL
+                &trans     &trans                                                                            &kp COMMA  &kp PERIOD
+                                      &trans     &trans  &trans    &trans  &trans           &trans
+                                                 &trans  &tog 2    &trans  &trans
+        &trans  &trans     &trans
+        &trans  &trans     &trans
+        &trans  &trans     &trans
             >;
 
             label = "numbers";
