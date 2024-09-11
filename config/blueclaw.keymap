@@ -99,6 +99,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        intelligent_shift: intelligent_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INTELLIGENT_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        };
     };
 
     combos {
@@ -198,13 +205,13 @@
         default_layer {
             label = "Base";
             bindings = <
-&gresc     &kp N1        &kp N2           &kp N3           &kp N4                &kp N5                                &kp N6       &kp N7              &kp N8            &kp N9           &kp N0                        &kp MINUS
-&kp TAB    &kp Q         &kp W            &kp F            &kp P                 &kp B                                 &kp J        &kp L               &kp U             &kp Y            &kp SEMICOLON                 &kp BACKSLASH
-&kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                                 &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
-&kp LSHFT  &kp Z         &kp X            &kp C            &kp D                 &kp V                                 &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
-                         &kp LCTRL        &kp LEFT_ALT                                                                                                  &lbr              &rbr
-                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &kp LEFT_SHIFT  &lt 1 SPACE  &kp BACKSPACE
-                                                                                 &mo 5        &mo 6    &mo 6           &mo 4
+&gresc     &kp N1        &kp N2           &kp N3           &kp N4                &kp N5                                    &kp N6       &kp N7              &kp N8            &kp N9           &kp N0                        &kp MINUS
+&kp TAB    &kp Q         &kp W            &kp F            &kp P                 &kp B                                     &kp J        &kp L               &kp U             &kp Y            &kp SEMICOLON                 &kp BACKSLASH
+&kp ESC    &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T     &kp G                                     &kp M        &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr LEFT_ALT I  &hmr RIGHT_CONTROL O          &kp SQT
+&kp LSHFT  &kp Z         &kp X            &kp C            &kp D                 &kp V                                     &kp K        &kp H               &kp COMMA         &kp DOT          &mt LA(LC(LEFT_SHIFT)) SLASH  &kp RSHFT
+                         &kp LCTRL        &kp LEFT_ALT                                                                                                      &lbr              &rbr
+                                                           &mt LEFT_COMMAND TAB  &lt 3 ENTER  &mo 2    &intelligent_shift  &lt 1 SPACE  &kp BACKSPACE
+                                                                                 &mo 5        &mo 6    &mo 6               &mo 4
            &trans        &kp K_MUTE       &trans
            &trans        &trans           &trans
            &trans        &trans           &trans
@@ -267,8 +274,8 @@
         sys {
             bindings = <
 &bootloader   &kp LG(LC(KP_N1))  &kp LG(LC(KP_N2))  &kp LG(LC(KP_N3))  &kp LG(LC(KP_N4))  &kp LG(LC(KP_N5))                    &kp LG(LC(KP_N6))  &kp LG(LC(KP_N7))  &kp LG(LC(KP_N8))  &kp LG(LC(KP_N9))  &kp LG(LC(KP_N0))  &bootloader
-&trans        &m_pass1           &m_pass2           &trans             &trans             &trans                               &trans             &kp K_LOCK         &trans             &trans             &trans             &trans
-&kp CAPSLOCK  &caps_word         &trans             &trans             &trans             &to 7                                &trans             &trans             &trans             &trans             &trans             &trans
+&trans        &m_pass1           &m_pass2           &trans             &trans             &trans                               &trans             &kp K_LOCK         &kp UP             &trans             &trans             &trans
+&kp CAPSLOCK  &caps_word         &trans             &trans             &trans             &to 7                                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &trans             &trans
 &trans        &m_zoom            &trans             &trans             &trans             &to 0                                &trans             &trans             &trans             &trans             &trans             &trans
                                  &trans             &trans                                                                                                           &trans             &trans
                                                                        &trans             &trans             &trans    &trans  &trans             &trans
