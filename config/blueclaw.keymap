@@ -274,9 +274,9 @@
         sys {
             bindings = <
 &bootloader   &kp LG(LC(KP_N1))  &kp LG(LC(KP_N2))  &kp LG(LC(KP_N3))  &kp LG(LC(KP_N4))  &kp LG(LC(KP_N5))                    &kp LG(LC(KP_N6))  &kp LG(LC(KP_N7))  &kp LG(LC(KP_N8))  &kp LG(LC(KP_N9))  &kp LG(LC(KP_N0))  &bootloader
-&trans        &m_pass1           &m_pass2           &trans             &trans             &trans                               &trans             &kp K_LOCK         &kp UP             &trans             &trans             &trans
+&trans        &m_pass1           &m_pass2           &trans             &trans             &trans                               &kp LG(LC(KP_N1))  &kp LG(LC(KP_N2))  &kp UP             &trans             &trans             &trans
 &kp CAPSLOCK  &caps_word         &trans             &trans             &trans             &to 7                                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &trans             &trans
-&trans        &m_zoom            &trans             &trans             &trans             &to 0                                &trans             &trans             &trans             &trans             &trans             &trans
+&trans        &m_zoom            &trans             &trans             &trans             &to 0                                &kp K_LOCK         &trans             &trans             &trans             &trans             &trans
                                  &trans             &trans                                                                                                           &trans             &trans
                                                                        &trans             &trans             &trans    &trans  &trans             &trans
                                                                                           &trans             &trans    &tog 4  &trans
