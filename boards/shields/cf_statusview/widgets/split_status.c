@@ -29,14 +29,20 @@ static struct split_status_state {
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
 void get_state_as_string(char *state) {
+    char temp_state[100] = {0};
+    sprintf(temp_state + strlen(temp_state), "[");
 
     for (int i = 0; i < CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS; i++) {
         if (split_state.connected[i]) {
-            sprintf(state, "%s %d", state, split_state.battery_level[i]);
+            sprintf(temp_state + strlen(temp_state), " %02d", split_state.battery_level[i]);
         } else {
-            sprintf(state, "%s ---", state);
+            sprintf(temp_state + strlen(temp_state), " xx");
         }
     }
+    sprintf(temp_state + strlen(temp_state), " ]");
+
+    strncpy(state, temp_state, 100);
+    state[99] = '\0'; // Ensure null-termination
 }
 static void set_split_status(lv_obj_t *label, struct split_status_state state) {
     char msg[100];
