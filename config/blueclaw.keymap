@@ -227,7 +227,7 @@
 &trans  &hml LCTRL EXCLAMATION  &hml LEFT_ALT MINUS  &hml LEFT_GUI PLUS  &hml LEFT_SHIFT EQUAL  &kp HASH                         &kp LS(PIPE)   &hmr LEFT_SHIFT COLON  &hmr LEFT_GUI LEFT_PARENTHESIS  &hmr LEFT_ALT RIGHT_PARENTHESIS  &hmr RCTRL QUESTION  &trans
 &trans  &kp LS(CARET)           &kp FSLH             &kp LS(STAR)        &kp BSLH               &pdir                            &kp LS(TILDE)  &kp LS(DLLR)           &kp LS(LBRC)                    &kp LS(RBRC)                     &kp LS(AT)           &trans
                                 &trans               &trans                                                                                                            &trans                          &trans
-                                                                         &trans                 &trans         &trans    &trans  &trans         &trans
+                                                                         &trans                 &trans         &trans    &trans  &trans         &kp DELETE
                                                                                                 &trans         &trans    &tog 1  &trans
         &trans                  &trans               &trans
         &trans                  &trans               &trans
