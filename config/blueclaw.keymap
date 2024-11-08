@@ -278,7 +278,7 @@
 &kp CAPSLOCK  &caps_word         &trans             &trans             &trans             &to 7                                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &trans             &trans
 &trans        &m_zoom            &trans             &trans             &trans             &to 0                                &kp K_LOCK         &trans             &trans             &trans             &trans             &trans
                                  &trans             &trans                                                                                                           &trans             &trans
-                                                                       &trans             &trans             &trans    &trans  &trans             &trans
+                                                                       &trans             &trans             &trans    &trans  &trans             &kp DELETE
                                                                                           &trans             &trans    &tog 4  &trans
               &bootloader        &trans             &trans
               &trans             &trans             &trans
