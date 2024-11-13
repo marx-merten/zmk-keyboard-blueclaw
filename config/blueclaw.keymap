@@ -256,12 +256,12 @@
 
         Nav {
             bindings = <
-&trans  &trans  &trans              &trans              &trans                 &trans                                  &trans      &trans           &trans            &trans      &trans             &trans
-&trans  &trans  &trans              &kp UP              &trans                 &kp K_MUTE                              &kp PG_UP   &kp HOME         &kp UP            &kp END     &trans             &trans
-&trans  &trans  &hml LEFT_ALT LEFT  &hml LEFT_GUI DOWN  &hml LEFT_SHIFT RIGHT  &kp C_VOLUME_UP                         &kp PG_DN   &kp LEFT         &kp DOWN          &kp RIGHT   &kp K_APPLICATION  &kp ENTER
-&trans  &trans  &trans              &kp K_COPY          &kp K_PASTE            &kp C_VOL_DN                            &kp C_STOP  &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT  &trans             &trans
-                &trans              &trans                                                                                                          &trans            &trans
-                                                        &trans                 &trans           &trans    &key_repeat  &trans      &lt 8 BACKSPACE
+&trans  &trans  &trans              &trans              &trans                 &trans                                  &trans        &trans           &trans            &trans      &trans             &trans
+&trans  &trans  &trans              &kp UP              &trans                 &kp K_MUTE                              &kp PG_UP     &kp HOME         &kp UP            &kp END     &trans             &trans
+&trans  &trans  &hml LEFT_ALT LEFT  &hml LEFT_GUI DOWN  &hml LEFT_SHIFT RIGHT  &kp C_VOLUME_UP                         &kp PG_DN     &kp LEFT         &kp DOWN          &kp RIGHT   &kp K_APPLICATION  &kp ENTER
+&trans  &trans  &trans              &kp K_COPY          &kp K_PASTE            &kp C_VOL_DN                            &kp C_STOP    &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT  &trans             &trans
+                &trans              &trans                                                                                                            &trans            &trans
+                                                        &trans                 &trans           &trans    &key_repeat  &lt 1 INSERT  &lt 8 BACKSPACE
                                                                                &trans           &tog 3    &trans       &trans
         &trans  &trans              &trans
         &trans  &trans              &trans
