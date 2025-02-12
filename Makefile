@@ -31,3 +31,9 @@ $(LAYERS:%=doc/km_layer_%.svg): doc/keymap.yaml keymapper.conf config/blueclaw.j
 	@echo "target: $(@:doc/km_layer_%.png=%)"
 # keymap -c keymapper.conf draw -j config/blueclaw.json --keys-only --select-layers $(@:doc/km_layer_%.png=%) doc/keymap.yaml >$@
 	keymap -c keymapper.conf draw  --select-layers  $(@:doc/km_layer_%.svg=%)   -j config/blueclaw.json --keys-only  doc/keymap.yaml  >$@
+	
+png: doc/layouts/keymap.png doc/layouts/keymap_combos.png $(LAYERS:%=doc/layouts/km_layer_%.png)
+	
+doc/layouts/%.png: doc/%.svg
+	mkdir -p doc/layouts
+	inkscape --export-filename=$@ --export-background=#D3D3D3 $<
