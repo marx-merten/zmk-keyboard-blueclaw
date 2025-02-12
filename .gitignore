@@ -14,3 +14,5 @@ doc/*.svg
 doc/keymap.yaml
 doc/layouts
 early.log
+o3-mini
+.aider*
