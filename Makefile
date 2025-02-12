@@ -3,7 +3,11 @@ LAYERS := default Symbols Num     Nav     sys     func    locking game    cfg
 
 
 
-doc: doc/keymap.svg doc/keymap_combos.svg $(LAYERS:%=doc/km_layer_%.svg)
+doc: doc/layouts/keymap.png doc/layouts/keymap_combos.png $(LAYERS:%=doc/layouts/km_layer_%.png)
+
+doc/layouts/%.png: doc/%.svg
+	@mkdir -p doc/layouts
+	convert -background lightgray -flatten $< $@
 
 doc/keymap.svg: doc/keymap.yaml keymapper.conf config/blueclaw.json
 	keymap -c keymapper.conf draw -j config/blueclaw.json --keys-only doc/keymap.yaml >doc/keymap.svg
