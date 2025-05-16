@@ -239,12 +239,12 @@
 
         Num {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                        &trans   &trans  &trans     &trans      &trans        &trans
-&trans  &trans  &cond_lte  &cond_gte  &cond_mgt  &trans                        &trans   &kp N7  &kp N8     &kp N9      &kp LS(STAR)  &trans
-&trans  &trans  &math_dec  &math_inc  &cond_egt  &trans                        &kp TAB  &kp N4  &kp N5     &kp N6      &kp LS(PLUS)  &kp MINUS
-&trans  &trans  &trans     &trans     &trans     &trans                        &kp N0   &kp N1  &kp N2     &kp N3      &kp BSLH      &kp EQUAL
-                &trans     &trans                                                               &kp COMMA  &kp PERIOD
-                                      &trans     &trans  &trans    &caps_word  &trans   &trans
+&trans  &trans  &trans     &trans     &trans     &trans                        &trans   &trans      &trans     &trans      &trans        &trans
+&trans  &trans  &cond_lte  &cond_gte  &cond_mgt  &trans                        &trans   &kp N7      &kp N8     &kp N9      &kp LS(STAR)  &trans
+&trans  &trans  &math_dec  &math_inc  &cond_egt  &trans                        &kp TAB  &kp N4      &kp N5     &kp N6      &kp LS(PLUS)  &kp MINUS
+&trans  &trans  &trans     &trans     &trans     &trans                        &kp N0   &kp N1      &kp N2     &kp N3      &kp BSLH      &kp EQUAL
+                &trans     &trans                                                                   &kp COMMA  &kp PERIOD
+                                      &trans     &trans  &trans    &caps_word  &trans   &kp DELETE
                                                  &trans  &tog 2    &trans      &trans
         &trans  &trans     &trans
         &trans  &trans     &trans
