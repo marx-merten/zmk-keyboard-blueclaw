@@ -307,13 +307,13 @@
 
         locking {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                                    &trans  &trans
-                                &trans  &to 3   &to 2     &trans  &to 1   &trans
-                                        &to 5   &trans    &trans  &to 4
+&trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LS(LA(LC(LG(B))))                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans                                                                   &trans  &trans
+                                &trans  &to 3                  &to 2     &trans  &to 1   &trans
+                                        &to 5                  &trans    &trans  &to 4
         &trans  &trans  &trans
         &trans  &trans  &trans
         &trans  &trans  &trans
