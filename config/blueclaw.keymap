@@ -282,7 +282,7 @@
                                                                                           &trans             &trans    &tog 4  &trans
               &bootloader        &trans             &trans
               &trans             &trans             &trans
-              &trans             &trans             &trans
+              &trans             &trans             &studio_unlock
             >;
 
             label = "sys";
