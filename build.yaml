@@ -22,6 +22,9 @@ include:
     shield: blueclaw_slaveleft
   - board: seeeduino_xiao_ble
     shield: blueclaw_master cf_oled_128x32 cf_statusview
+    snippet: zmk-usb-logging
+  - board: seeeduino_xiao_ble
+    shield: blueclaw_master_studio cf_oled_128x32 cf_statusview
     snippet: studio-rpc-usb-uart zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2

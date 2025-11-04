@@ -10,5 +10,11 @@ config SHIELD_BLUECLAW_RIGHT
 config SHIELD_BLUECLAW_MASTER
     def_bool $(shields_list_contains,blueclaw_master)
 
+config SHIELD_BLUECLAW_MASTER_STUDIO
+    def_bool $(shields_list_contains,blueclaw_master_studio)
+
+config SHIELD_BLUECLAW_LEFT_STUDIO
+    def_bool $(shields_list_contains,blueclaw_left_studio)
+
 config SHIELD_BLUECLAW_SLAVELEFT
     def_bool $(shields_list_contains,blueclaw_slaveleft)
