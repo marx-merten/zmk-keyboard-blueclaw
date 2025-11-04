@@ -122,7 +122,7 @@
             slow-release;
         };
 
-        CO_MOUSE {
+        CO_MOUSE {https://www.youtube.com/watch?v=KwFWBdfZKnI
             bindings = <&mo 8>;
             key-positions = <56 57>;
             timeout-ms = <100>;
