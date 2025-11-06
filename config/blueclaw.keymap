@@ -10,11 +10,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
 &mt { tapping-term-ms = <200>; };
+
+&mmv {
+  time-to-max-speed-ms = <1000>;
+  acceleration-exponent = <1>;
+};
 
 &gresc { keep-mods = <(MOD_LSFT|MOD_RSFT)>; };
 
