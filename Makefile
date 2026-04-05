@@ -1,5 +1,5 @@
 
-LAYERS := default Symbols Num     Nav     sys     func    locking game    cfg
+LAYERS := Base symbols numbers     Nav     sys     f-keys    layers game    BIOS
 
 
 
@@ -13,7 +13,7 @@ doc/keymap.svg: doc/keymap.yaml keymapper.conf config/blueclaw.json
 	keymap -c keymapper.conf draw -j config/blueclaw.json --keys-only doc/keymap.yaml >doc/keymap.svg
 
 doc/keymap_combos.svg: doc/keymap.yaml keymapper.conf config/blueclaw.json
-	keymap -c keymapper.conf draw  --select-layers default  -j config/blueclaw.json  doc/keymap.yaml >doc/keymap_combos.svg
+	keymap -c keymapper.conf draw  --select-layers Base  -j config/blueclaw.json  doc/keymap.yaml >doc/keymap_combos.svg
 
 doc/keymap.yaml: config/blueclaw.keymap keymapper.conf
 	keymap -c keymapper.conf parse -z config/blueclaw.keymap  >doc/keymap.yaml
