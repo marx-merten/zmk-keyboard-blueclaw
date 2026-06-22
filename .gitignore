@@ -12,6 +12,7 @@ pcb/dongle/#auto_saved_files#
 doc/keymap_combos.svg
 doc/*.svg
 doc/keymap.yaml
+doc/cheatsheet.html
 doc/layouts
 early.log
 o3-mini
