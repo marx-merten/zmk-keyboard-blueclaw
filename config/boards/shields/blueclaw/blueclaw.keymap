@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-    keymap {
+    uvx --from keymap-drawer keymap {
         compatible = "zmk,keymap";
 
         default_layer {

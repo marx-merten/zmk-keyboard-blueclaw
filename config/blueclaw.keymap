@@ -216,7 +216,7 @@
         };
     };
 
-    keymap {
+    uvx --from keymap-drawer keymap {
         compatible = "zmk,keymap";
 
         default_layer {
